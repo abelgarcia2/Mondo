@@ -13,13 +13,11 @@ function Login({ updateState }: any) {
 		e.preventDefault();
 
 		if (email != '' && password != '') {
-			console.log('adsa');
-			
 			const res = await sendLogin(email, password);
 
 			const jwt = res.token;
 			if (jwt !== undefined) {
-				localStorage.setItem('jwt', jwt);
+				sessionStorage.setItem('jwt', jwt);
 				updateState(true);
 			} else {
 				toast.error(res.message, { position: 'top-right' });

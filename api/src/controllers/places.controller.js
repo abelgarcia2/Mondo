@@ -6,7 +6,6 @@ import { JoiPlaceSchema } from "../validation/JoiPlaceSchema.js";
 const addPlace = async (req, res) => {
     // const reqPlace = parsePlaceObject(req)
     const reqPlace = req.body
-    console.log(reqPlace);
     reqPlace.labels = reqPlace.labels.split(',')
 
     console.log(reqPlace);

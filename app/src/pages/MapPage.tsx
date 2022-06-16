@@ -31,14 +31,6 @@ function MapPage() {
 		asyncGetPlaces();
 	}, []);
 
-	// useEffect(() => {
-	// 	window.addEventListener('beforeunloadddddd', () => {
-	// 		console.log('borrar');
-
-	// 		localStorage.removeItem('jwt');
-	// 	});
-	// });
-
 	console.log(currentPosition);
 
 	if (currentPosition.lat === 0) return null;

@@ -32,11 +32,10 @@ function NewPlacePopUp(props) {
 
 		const { message, status } = await sendPlace(
 			data,
-			localStorage.getItem('jwt')
+			sessionStorage.getItem('jwt')
 		);
 
 		console.log({ message, status });
-		// if (jsonRes === 'You must be logged in')
 		status != 201 ? toast.error(message) : toast.success(message);
 	};
 

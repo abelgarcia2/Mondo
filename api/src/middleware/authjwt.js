@@ -4,8 +4,6 @@ import User from '../models/UserSchema.js'
 export const verifyToken = async (req, res, next) => {
     const token = req.headers.jwt
 
-    console.log(token);
-    
     if (req.headers.jwt == 'undefined')
         return res.status(401).json({ message: 'You must be logged in' })
 

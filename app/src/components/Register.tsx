@@ -19,7 +19,7 @@ function Register({ updateState }: any) {
 		if (checkPasswords()) res = await sendRegister(username, email, password);
 
 		if (res.token !== undefined) {
-			localStorage.setItem('jwt', res.token);
+			sessionStorage.setItem('jwt', res.token);
 			updateState(true);
 		}
 	};
@@ -32,6 +32,12 @@ function Register({ updateState }: any) {
 				<label htmlFor='email'>Email</label>
 				<input type='text' onChange={(e) => setEmail(e.target.value)} />
 				<label htmlFor='password'>Password</label>
+				<small> 1 uppercase character</small>
+				<small> 1 lowercase character</small>
+				<small> 1 numeric character</small>
+				<small> 1 special character (!@#$%^&*)</small>
+				<small> 8 characters or longer</small>
+
 				<input type='password' onChange={(e) => setPassword(e.target.value)} />
 				<label htmlFor='checkpassword'>Repeat password</label>
 				<input
