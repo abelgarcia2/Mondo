@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:5000';
+const baseUrl = 'https://fuscia-debt-production.up.railway.app/';
 const baseGeoCodeUrl = 'https://geocode.maps.co/search?q=';
 
 export async function getPlacesSuggestion(place: string): Promise<[{}]> {
