@@ -1,7 +1,6 @@
 import { MapContainer, Marker, TileLayer, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import Markers from '../components/Markers';
-import parkings from '../assets/allParkings.json';
 import { useEffect, useState } from 'react';
 
 import { getPlaces } from '../services/RestService';
