@@ -32,6 +32,7 @@ export async function sendLogin(email: string, password: string) {
 	const req = await fetch(`${baseUrl}/users/login`, {
 		method: 'POST',
 		headers: {
+			'Access-Control-Allow-Origin': '*',
 			'Accept': '*/*',
 			'Content-Type': 'application/json',
 		},
