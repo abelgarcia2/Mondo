@@ -1,4 +1,4 @@
-const baseUrl = 'https://fuscia-debt-production.up.railway.app/';
+const baseUrl = 'https://fuscia-debt-production.up.railway.app';
 const baseGeoCodeUrl = 'https://geocode.maps.co/search?q=';
 
 export async function getPlacesSuggestion(place: string): Promise<[{}]> {
@@ -32,7 +32,7 @@ export async function sendLogin(email: string, password: string) {
 	const req = await fetch(`${baseUrl}/users/login`, {
 		method: 'POST',
 		headers: {
-			Accept: '*/*',
+			'Accept': '*/*',
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify({
