@@ -1,0 +1,107 @@
+body {
+	background-color: rgb(38, 0, 73);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.leaflet-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+/* Mover a SearchBar.css*/
+
+.search-bar-autocomplete {
+	/* position: absolute; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	padding: 0.5rem;
+	width: 20rem;
+}
+
+.search-bar {
+	border: 0;
+	outline: none;
+	width: 100%;
+}
+
+.search-bar-container {
+	display: flex;
+	align-items: center;
+	border: 1px solid #7777;
+	border-radius: 0.5rem;
+	/* width: 30rem; */
+	/* width: 100%; */
+	padding: 0.5rem;
+	/* margin: 1rem 0 0.2rem; */
+}
+
+.search-icon {
+	color: #777;
+	padding-right: 0.3rem;
+}
+
+/* Mover a MapPage.css */
+
+.map-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Mover a AutocompleteResults.css */
+
+.autocomplete-list {
+	list-style: none;
+	margin: 0.2rem;
+	padding: 0;
+	overflow-y: scroll;
+	max-height: 20rem;
+	box-shadow: 0px 8px 16px 0px #00000033;
+	border: 1px solid black;
+}
+
+.autocomplete-list:nth-child(1) {
+	padding-top: 0.5rem;
+}
+
+.autocomplete-item {
+	width: 100%;
+	background-color: #c2c2c2;
+	padding-bottom: 1rem;
+	cursor: pointer;
+}
+
+.autocomplete-item:hover {
+	background-color: #49494977;
+}
+
+.autocomplete-item:active {
+	background-color: #252525;
+	color: #ffffff;
+}
+
+.btn {
+	margin-top: 4px;
+	border: none;
+	border-radius: 0.5em;
+	color: white;
+	background-color: #fc9f82;
+}
+
+/*
+dfdf
+*/
+
+.title {
+	text-transform: uppercase;
+}
